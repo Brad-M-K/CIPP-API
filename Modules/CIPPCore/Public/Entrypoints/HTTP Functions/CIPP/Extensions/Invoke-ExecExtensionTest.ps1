@@ -73,6 +73,14 @@ Function Invoke-ExecExtensionTest {
                     $Results = [pscustomobject]@{'Results' = 'Failed to connect to Sherweb, check your API credentials and try again.' }
                 }
             }
+            'Infinigate' {
+                $Auth = Get-InfinigateAuthentication
+                if ($Auth.Headers) {
+                    $Results = [pscustomobject]@{'Results' = 'Successfully Connected to Infinigate' }
+                } else {
+                    $Results = [pscustomobject]@{'Results' = 'Failed to connect to Infinigate, check your API credentials and try again.' }
+                }
+            }
             'HIBP' {
                 $ConnectionTest = Get-HIBPConnectionTest
                 $Results = [pscustomobject]@{'Results' = 'Successfully Connected to HIBP' }
