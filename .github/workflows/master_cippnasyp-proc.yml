@@ -27,6 +27,6 @@ jobs:
           app-name: 'cippnasyp-proc'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_22DD7CD9305D4C71ABF5CBA4BF3E1B93 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A07DFA542C8540E99B3033E017FECBC5 }}
           sku: 'flexconsumption'
         
