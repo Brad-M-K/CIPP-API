@@ -27,6 +27,6 @@ jobs:
           app-name: 'cippnasyp-auditlog'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D4A85B5B135A44C2B597742C903AA585 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F9D55F7A3E194214ADD1349E20344CFC }}
           sku: 'flexconsumption'
         
